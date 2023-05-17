@@ -209,13 +209,13 @@ GET http://localhost:8170/api/v1/news/
 ### 1.4.9 GET method for getting list of news by source id (with pagination);
 #### Get list of news by source id (with pagination)
 ```
-GET http://localhost:8170/api/v1/news/filter-by-sourceid?sourceId={1}&page=2&size=1
+GET http://localhost:8170/api/v1/news/filter-by-sourceid?sourceId=1&page=2&size=1
 ```
 
 ### 1.4.10 GET method for getting list of news by topic id (with pagination);
 #### Get list of news by topic id (with pagination)
 ```
-GET http://localhost:8170/api/v1/news/filter-by-topicid?topicId={1}&page={2}&size={1}
+GET http://localhost:8170/api/v1/news/filter-by-topicid?topicId=1&page=2&size=1
 ```
 
 ## Part 2: Security with API token
