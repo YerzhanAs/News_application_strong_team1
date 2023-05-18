@@ -29,14 +29,14 @@ public class News {
     private LocalDateTime publishDate;
 
     // Many-to-One relationship with NewsSource
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "news_source_id")
     @JsonIgnore
     private Source newsSource;
 
 
     // Many-to-One relationship with NewsTopic
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "news_topic_id")
     @JsonIgnore
     private Topic newsTopic;

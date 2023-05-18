@@ -77,6 +77,12 @@ public class SourceServiceImpl implements SourceService {
         }
     }
 
+
+    @Override
+    public List<Source> getAllSources() {
+        return sourceRepository.findAll();
+    }
+
     private SourceDto convertToSourceDTO(Source source){
         return modelMapper.map(source, SourceDto.class);
     }

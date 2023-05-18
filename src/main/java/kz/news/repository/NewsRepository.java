@@ -11,4 +11,6 @@ public interface NewsRepository extends JpaRepository<News, Long> {
     Page<News> findByNewsSourceId(Long sourceId, Pageable pageable);
 
     Page<News> findByNewsTopicId(Long topicId, Pageable pageable);
+
+
 }

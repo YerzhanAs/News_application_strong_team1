@@ -3,6 +3,7 @@ package kz.news.service;
 import kz.news.dto.NewsDto;
 import kz.news.dto.NewsSaveDto;
 import kz.news.entity.News;
+import kz.news.entity.Source;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -20,4 +21,6 @@ public interface NewsService {
     News createNews(NewsSaveDto newsSaveDto);
     Optional<NewsSaveDto> updateNews(Long id, NewsSaveDto newsSaveDto);
     boolean deleteNews(Long id);
+
+
 }

@@ -1,0 +1,4 @@
+ORDA news: 3
+BBC News: 1
+Reuters: 0
+The New York Times: 2

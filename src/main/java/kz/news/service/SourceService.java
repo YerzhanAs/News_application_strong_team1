@@ -1,6 +1,7 @@
 package kz.news.service;
 
 import kz.news.dto.SourceDto;
+import kz.news.entity.News;
 import kz.news.entity.Source;
 
 import java.util.List;
@@ -17,4 +18,7 @@ public interface SourceService {
     boolean deleteSource(Long id);
 
     Optional<SourceDto> findById(Long id);
+
+
+    List<Source> getAllSources();
 }

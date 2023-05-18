@@ -1,4 +1,4 @@
-package kz.news.news_application_strong_team;
+package kz.news;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

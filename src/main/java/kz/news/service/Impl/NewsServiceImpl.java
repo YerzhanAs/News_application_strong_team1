@@ -3,6 +3,7 @@ package kz.news.service.Impl;
 import kz.news.dto.NewsDto;
 import kz.news.dto.NewsSaveDto;
 import kz.news.entity.News;
+import kz.news.entity.Source;
 import kz.news.repository.NewsRepository;
 import kz.news.service.NewsService;
 import org.modelmapper.ModelMapper;
@@ -99,7 +100,6 @@ public class NewsServiceImpl implements NewsService {
     }
 
 
-    //этот код можно перевести в другой класс
 
     private News convertToNews(NewsSaveDto newsDto) {
         return modelMapper.map(newsDto, News.class);
