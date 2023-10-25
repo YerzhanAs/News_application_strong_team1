@@ -221,5 +221,8 @@ GET http://localhost:8170/api/v1/news/filter-by-topicid?topicId={1}&page={2}&siz
 ## Part 2: Security with API token
 I used spring security to configure the token. The token is automatically issued in json format after registration. The main thing is not to forget to insert a token when sending a request to /news, /news-topic, /news-source
 
+## Part 3: Scheduled statistical
+Every midnight, the application creates a file that contains the amount of news for each source.
+
 ## 1.6 Conclusion
 This project that was implemented as a way to create a Spring Boot application for Rest, database, security.
